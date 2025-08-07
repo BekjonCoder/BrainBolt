@@ -1,5 +1,5 @@
 import { Button } from "antd";
-import { data } from "../data/data";
+import { data } from "../data/questions";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
