@@ -69,7 +69,7 @@ const QuizPage = () => {
     const storedXP = Number(localStorage.getItem(key) || 0);
 
     if (storedXP < 10) {
-      alert("Hint olish uchun kamida 10 XP kerak!");
+       alert("You need at least 10 XP to use a hint!");
       return;
     }
 
