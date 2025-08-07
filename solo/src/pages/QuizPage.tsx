@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { data } from "../data/data";
+import { data } from "../data/questions";
 import { motion } from "framer-motion";
 
 const QuizPage = () => {
