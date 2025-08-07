@@ -5,6 +5,7 @@ import QuizPage from "./pages/QuizPage";
 import LevelsPage from "./pages/LevelsPage";
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>
