@@ -1,4 +1,4 @@
-import { SubjectType } from "./SubjectType";
+import type { SubjectType } from "./SubjectType";
 
 export const data: SubjectType[] = [
   // Math
