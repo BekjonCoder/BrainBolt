@@ -68,12 +68,15 @@ const QuizPage = () => {
     const key = `${category}-xp`;
     const storedXP = Number(localStorage.getItem(key) || 0);
 
-    if (storedXP >= 5) {
-      localStorage.setItem(key, String(storedXP - 10));
-      setHintUsed(true);
-      setShowHint(true);
-      updateTotalXP();
+    if (storedXP < 10) {
+      alert("Hint olish uchun kamida 10 XP kerak!");
+      return;
     }
+
+    localStorage.setItem(key, String(storedXP - 10));
+    setHintUsed(true);
+    setShowHint(true);
+    updateTotalXP();
   };
 
   const getButtonClass = (variant: string) => {
